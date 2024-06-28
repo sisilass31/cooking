@@ -19,7 +19,7 @@
 body {
   box-sizing: border-box;
   background-color: var(--background);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -95,7 +95,7 @@ h2 {
 .haut {
   display: flex;
   align-items: center;
-  margin: 55px 0;
+  margin: 80px 0;
   gap: 50px;
 }
 
@@ -122,9 +122,12 @@ h2 {
 /*description*/
 
 .description {
-  padding: 80px;
+  padding: 0 80px 80px 80px;
 }
 
+.description p {
+  padding-bottom: 15px;
+}
 /*description*/
 
 /*recette*/
@@ -135,30 +138,50 @@ h2 {
   margin-bottom: 50px;
 }
 
+.title-description h2 {
+  text-transform: uppercase;
+}
+
 .liste-recettes {
   display: flex;
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .name-recette {
-  margin: 15px;
+  margin: 25px 32px;
 }
 
 .recette {
-  background-color: var(--green);
+  background-color: var(--light-green);
+  border-radius: 15px;
 }
 
 .recette a {
-  color: var(--white);
+  color: var(--dark-green);
 }
 
 .recette img {
   width: 400px;
   height: 300px;
   object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
+.difficulte-temps {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.d-t p {
+  color: var(--white);
+  background-color: var(--green);
+  padding: 6px 22px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
 /*recette*/
