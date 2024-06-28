@@ -48,6 +48,8 @@ h2 {
 .logo {
   display: flex;
   align-items: center;
+  gap: 20px;
+  cursor: pointer;
 }
 
 .img-logo img {
@@ -66,9 +68,20 @@ h2 {
   gap: 50px;
 }
 
+.nav-links a {
+  color: var(--dark-green);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
 .profile {
   display: flex;
   align-items: center;
+  gap: 28px;
+}
+
+.profile p {
+  color: var(--dark-green);
 }
 
 .profile-pic img {
@@ -83,18 +96,25 @@ h2 {
   display: flex;
   align-items: center;
   margin: 55px 0;
+  gap: 50px;
 }
 
 .plante img {
   width: 100%;
 }
 
-.title {
-  margin: 0 30px;
+.title h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--dark-green);
+  text-transform: uppercase;
+}
+
+.title p {
+  margin-top: 20px;
 }
 
 .plat-haut img {
-  width: 100%;
+  width: 90%;
 }
 
 /*top*/
@@ -106,18 +126,28 @@ h2 {
 }
 
 /*description*/
+
 /*recette*/
+
+.title-description {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
 .liste-recettes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 80px;
+}
+
+.name-recette {
+  margin: 15px;
 }
 
 .recette {
-  border-radius: 10px;
   background-color: var(--green);
 }
 
@@ -126,8 +156,7 @@ h2 {
 }
 
 .recette img {
-  border-radius: 10px 10px 0 0;
-  width: 360px;
+  width: 400px;
   height: 300px;
   object-fit: cover;
 }
