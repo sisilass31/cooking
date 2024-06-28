@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Créer votre recette!</title>
+</head>
+
+<body>
+    <header>
+        <h1>C'est à votre tour de briller en cuisine ! Partager votre recette unique avec notre communauté.
+        </h1>
+    </header>
+    <main>
+        <h3>Pour que votre recette soit fidèlement reproduite, donnez-nous toutes les informations nécessaires, des
+            ingrédients exacts aux étapes précises de préparation.
+        </h3>
+
+        <section>
+            <h4>Vos informations:</h4>
+            <form>
+                <label for="votre-nom">Votre prénom</label>
+                <input type="text" name="votre-nom">
+
+                <label for="votre-prénom">Votre nom</label>
+                <input type="text" name="votre-prénom">
+
+                <label for="votre-prénom">Votre email</label>
+                <input type="email" name="votre-email">
+            </form>
+            <p>Je désire voir apparaître ces informations sur la recette:</p>
+            
+            <form style="display: flex; align-items: center";>
+                <input type="checkbox"><p>Mon nom, prénom ou pseudonyme</p>
+                <br>
+                <input type="checkbox"><p>Mon adresse e-mail</p>
+                <br>
+                <input type="checkbox"><p>L'adresse de mon site Web</p>
+            </form>
+        </section>
+
+        <section>
+            <h4>Recette:</h4>
+
+            <form>
+                <label for="titre">Le titre de votre recette</label>
+                <input type="text" name="titre">
+
+                <br><br>
+
+                <label for="description">La description</label>
+                <input type="text" name="description">
+
+                <br><br>
+
+                <label for="image">Rajouter une image:</label>
+                <input type="file" name="image">
+
+                <br>
+                <br>
+
+                <label for="durée">La durée de préparation:</label>
+                <input type="text" name="durée"> <span>min</span>
+                <br>
+                <br>
+                <label for="cuisson">La durée de cuisson (*) champ facultatif</label>
+                <input type="text" name="cuisson"> <span>min</span>
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="ingredients">Ingrédients:</label>
+                            <br>
+                            <textarea name="ingredients"></textarea>
+                        </td>
+                        <br>
+                        <td>
+                            <label for="Préparation">Préparation:</label>
+                            <br>
+                            <textarea name="Préparation"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <label for="astuce">Quelques astuces?</label>
+                <input type="text" name="astuce">
+
+                <br><br>
+                <input type="submit" name="envoyer" value="Mettre ma recette en ligne">
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
