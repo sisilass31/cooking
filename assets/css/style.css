@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
@@ -6,20 +8,20 @@
 }
 
 :root {
-  --green: #7aa95c;
-  --dark-green: #486537;
+  --green: #5ca51a;
+  --dark-green: #437a13;
   --light-green: #bef3a0;
   --white: #fff;
   --black: #000;
-  --background: #f6f9f4;
+  --light-grey: #5e5e5e;
 }
 
 /*general*/
 
 body {
   box-sizing: border-box;
-  background-color: var(--background);
-  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+  font-family: "Carrois Gothic";
 }
 
 a {
@@ -31,9 +33,10 @@ ul li {
 }
 
 h2 {
-  font-family: Times New Roman;
+  font-family: "Times New Roman", Times, serif;
   color: var(--green);
 }
+
 /*general*/
 
 /*navbar*/
@@ -41,8 +44,8 @@ h2 {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--light-green);
-  padding: 18px 50px;
+  padding: 0 50px;
+  height: 105px;
 }
 
 .logo {
@@ -69,9 +72,15 @@ h2 {
 }
 
 .nav-links a {
-  color: var(--dark-green);
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+  color: var(--black);
+  font-family: "Carrois Gothic";
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: var(--green);
 }
 
 .profile {
@@ -81,13 +90,15 @@ h2 {
 }
 
 .profile p {
-  color: var(--dark-green);
+  color: var(--black);
+  font-size: 20px;
 }
 
 .profile-pic img {
   width: 50px;
   height: 50px;
 }
+
 /*navbar*/
 
 /*top*/
@@ -95,26 +106,52 @@ h2 {
 .haut {
   display: flex;
   align-items: center;
-  margin: 80px 0;
-  gap: 50px;
+  margin: 50px 0;
 }
 
 .plante img {
-  width: 100%;
+  width: 80%;
 }
 
 .title h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  letter-spacing: 8px;
   color: var(--dark-green);
   text-transform: uppercase;
 }
 
-.title p {
+.description-title p {
   margin-top: 20px;
+  line-height: 30px;
 }
 
 .plat-haut img {
   width: 90%;
+}
+
+.bouton-recette {
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.bouton-recette p:hover {
+  background-color: var(--white);
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+
+.bouton-recette p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 200px;
+  background-color: var(--green);
+  border: 2px solid var(--green);
+  color: var(--white);
+  padding: 15px 18px;
+  border-radius: 8px;
 }
 
 /*top*/
@@ -122,20 +159,43 @@ h2 {
 /*description*/
 
 .description {
-  padding: 0 80px 80px 80px;
+  padding: 0 80px 50px 80px;
 }
 
 .description p {
   padding-bottom: 15px;
 }
+
+.description p {
+  line-height: 26px;
+}
+
 /*description*/
 
 /*recette*/
 
 .title-description {
-  display: flex;
-  justify-content: center;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-description h2 {
+  font-family: Roboto, sans-serif;
+  color: var(--black);
+  letter-spacing: 3px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.title-description p {
+  color: var(--light-grey);
+  margin-top: 12px;
+}
+
+.img-desc img {
+  width: 120px;
 }
 
 .title-description h2 {
@@ -147,41 +207,80 @@ h2 {
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
-  align-items: center;
   padding-bottom: 50px;
 }
 
-.name-recette {
-  margin: 25px 32px;
-}
-
 .recette {
-  background-color: var(--light-green);
-  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0px 0px 16px -8px #000;
+  border-radius: 20px;
+  width: 320px;
 }
 
-.recette a {
-  color: var(--dark-green);
+.image-recette img {
+  border-radius: 20px;
+  width: 100%;
 }
 
-.recette img {
-  width: 400px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
+.name-recette {
+  text-align: center;
 }
 
-.difficulte-temps {
+.name-recette a {
+  color: var(--black);
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.name-recette a:hover {
+  color: var(--green);
+}
+
+.note-share-save {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 22px 0;
+}
+
+.share-save {
+  display: flex;
+  gap: 26px;
+  font-size: 22px;
+  color: var(--light-grey);
+}
+
+.note {
+  font-size: 22px;
+  color: var(--green);
+}
+
+.desc-recette {
+  margin: 18px 0;
+  text-align: center;
+}
+
+.under-desc {
   display: flex;
   justify-content: space-around;
-  padding-top: 20px;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.d-t p {
-  color: var(--white);
-  background-color: var(--green);
-  padding: 6px 22px;
-  border-radius: 20px;
-  letter-spacing: 1px;
+.under {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-grey);
+}
+
+.text-under {
+  margin-top: 6px;
+}
+
+.icon {
+  font-size: 20px;
 }
 /*recette*/

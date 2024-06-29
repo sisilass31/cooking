@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <title>Acceuil</title>
 </head>
 
@@ -44,14 +45,16 @@
         <img src="../assets/images/plante.png" alt="plante">
       </div>
       <div class="title">
-        <h1>
-          Petits-déjeuners plaisir et vitaminés le plein de vitalité dès le
-          réveil !
-        </h1>
-        <p>
-          Semaine trépidante ou week-end détente en vue, découvrez une sélection
-          de recettes plaisir pour bien commencer votre journée avec Joker !
-        </p>
+        <h1>des recettes simples et savoureuses</h1>
+        <div class="description-title">
+          <p>
+            Semaine trépidante ou week-end détente en vue, découvrez une sélection
+            de recettes plaisir pour bien commencer votre journée avec Joker !
+          </p>
+        </div>
+        <div class="bouton-recette">
+          <p>Regarder les recettes ici<i class="fa-solid fa-arrow-right"></i></p>
+        </div>
       </div>
       <div class="plat-haut">
         <img src="../assets/images/plat.png" alt="plat">
@@ -80,110 +83,273 @@
       <p><strong>Pour un brunch de week-end gourmand !</strong></p>
     </div>
 
-    <div class="title-description">
-      <h2>Recettes à la une</h2>
-    </div>
-    <div class="liste-recettes">
-
-      <div class="recette">
-        <img src="../assets/images/toasts-au-chevre-avocat-et-tomates-sechees.jpg" alt="toast" />
-        <br />
-        <div class="difficulte-temps">
-          <div class="d-t">
-            <p>Facile</p>
-          </div>
-          <div class="d-t">
-            <p>15min</p>
-          </div>
+    <div class="container-recipies">
+      <div class="title-description">
+        <div class="img-desc">
+          <img src="../assets/images/menthe.png" alt="menthe">
         </div>
-        <div class="name-recette">
-          <a href="../pages/recette.html">Toasts au chèvre, avocat et tomates séchées</a>
-        </div>
+        <h2>Recettes à la une</h2>
+        <p>Découvrez des plats faciles et inspirants pour transformer chaque repas en une véritable fête culinaire !</p>
       </div>
 
-      <div class="recette">
-        <img src="../assets/images/crepes-au-chocolat.jpeg" alt="crepes" />
-        <br />
-        <div class="difficulte-temps">
-          <div class="d-t">
-            <p>Facile</p>
-          </div>
-          <div class="d-t">
-            <p>25min</p>
-          </div>
-        </div>
-        <div class="name-recette">
-          <a href="../pages/recette.html">Crêpes au chocolat faciles</a>
-        </div>
-      </div>
+      <div class="liste-recettes">
 
-      <div class="recette">
-        <img src="../assets/images/pancakes.jpg" alt="pancakes" />
-        <br />
-        <div class="difficulte-temps">
-          <div class="d-t">
-            <p>Facile</p>
+        <div class="recette">
+          <div class="image-recette">
+            <img src="../assets/images/toasts-au-chevre-avocat-et-tomates-sechees.jpg" alt="toast" />
           </div>
-          <div class="d-t">
-            <p>35min</p>
+          <div class="note-share-save">
+            <div class="note">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="share-save">
+              <i class="fa-regular fa-bookmark"></i>
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
           </div>
-        </div>
-        <div class="name-recette">
-          <a href="../pages/recette.html">Pancake</a>
-        </div>
-      </div>
 
-      <div class="recette">
-        <img src="../assets/images/english-breakfast-muffin.jpg" alt="egg-bason" />
-        <br />
-        <div class="difficulte-temps">
-          <div class="d-t">
-            <p>Facile</p>
+          <div class="name-recette">
+            <a href="../pages/recette.html">Toasts au chèvre, avocat et tomates séchées</a>
           </div>
-          <div class="d-t">
-            <p>15min</p>
+          <div class="desc-recette">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis porro sit, culpa nihil
+              nemo vitae illo.</p>
+          </div>
+          <div class="under-desc">
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-clock"></i></div>
+              <div class="text-under">25 min</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-thumbs-up"></i></div>
+              <div class="text-under">Facile</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="text-under">2 pers</div>
+            </div>
           </div>
         </div>
-        <div class="name-recette">
-          <a href="../pages/recette.html">English egg and bacon muffin</a>
-        </div>
-      </div>
 
-      <div class="recette">
-        <img src="../assets/images/pain-perdu.jpg" alt="pain-perdu" />
-        <br />
-        <div class="difficulte-temps">
-          <div class="d-t">
-            <p>Facile</p>
+        <div class="recette">
+          <div class="image-recette">
+            <img src="../assets/images/crepes-au-chocolat.jpeg" alt="crepe" />
           </div>
-          <div class="d-t">
-            <p>20min</p>
+          <div class="note-share-save">
+            <div class="note">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="share-save">
+              <i class="fa-regular fa-bookmark"></i>
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
           </div>
-        </div>
-        <div class="name-recette">
-          <a href="../pages/recette.html">Pain perdu de mon enfance</a>
-        </div>
-      </div>
 
-      <div class="recette">
-        <img src="../assets/images/muffins-au-bacon-et-au-cheddar.jpg" alt="muffin" />
-        <br />
-        <div class="difficulte-temps">
-          <div class="d-t">
-            <p>Facile</p>
+          <div class="name-recette">
+            <a href="../pages/recette.html">Crêpes au chocolat faciles</a>
           </div>
-          <div class="d-t">
-            <p>25min</p>
+          <div class="desc-recette">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis porro sit, culpa nihil
+              nemo vitae illo.</p>
+          </div>
+          <div class="under-desc">
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-clock"></i></div>
+              <div class="text-under">25 min</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-thumbs-up"></i></div>
+              <div class="text-under">Facile</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="text-under">2 pers</div>
+            </div>
           </div>
         </div>
-        <div class="name-recette">
-          <a href="../pages/recette.html">Muffins au bacon et au cheddar</a>
-        </div>
-      </div>
 
+        <div class="recette">
+          <div class="image-recette">
+            <img src="../assets/images/pancakes.jpg" alt="Pancake" />
+          </div>
+          <div class="note-share-save">
+            <div class="note">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="share-save">
+              <i class="fa-regular fa-bookmark"></i>
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+          </div>
+
+          <div class="name-recette">
+            <a href="../pages/recette.html">Pancake</a>
+          </div>
+          <div class="desc-recette">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis porro sit, culpa nihil
+              nemo vitae illo.</p>
+          </div>
+          <div class="under-desc">
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-clock"></i></div>
+              <div class="text-under">25 min</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-thumbs-up"></i></div>
+              <div class="text-under">Facile</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="text-under">2 pers</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recette">
+          <div class="image-recette">
+            <img src="../assets/images/english-breakfast-muffin.jpg" alt="egg" />
+          </div>
+          <div class="note-share-save">
+            <div class="note">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="share-save">
+              <i class="fa-regular fa-bookmark"></i>
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+          </div>
+
+          <div class="name-recette">
+            <a href="../pages/recette.html">English egg and bacon muffin</a>
+          </div>
+          <div class="desc-recette">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis porro sit, culpa nihil
+              nemo vitae illo. </p>
+          </div>
+          <div class="under-desc">
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-clock"></i></div>
+              <div class="text-under">25 min</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-thumbs-up"></i></div>
+              <div class="text-under">Facile</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="text-under">2 pers</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recette">
+          <div class="image-recette">
+            <img src="../assets/images/pain-perdu.jpg" alt="pain-perdu" />
+          </div>
+          <div class="note-share-save">
+            <div class="note">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="share-save">
+              <i class="fa-regular fa-bookmark"></i>
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+          </div>
+
+          <div class="name-recette">
+            <a href="../pages/recette.html">Pain perdu de mon enfance</a>
+          </div>
+          <div class="desc-recette">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis porro sit, culpa nihil
+              nemo vitae illo.</p>
+          </div>
+          <div class="under-desc">
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-clock"></i></div>
+              <div class="text-under">25 min</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-thumbs-up"></i></div>
+              <div class="text-under">Facile</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="text-under">2 pers</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recette">
+          <div class="image-recette">
+            <img src="../assets/images/muffins-au-bacon-et-au-cheddar.jpg" alt="muffin" />
+          </div>
+          <div class="note-share-save">
+            <div class="note">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="share-save">
+              <i class="fa-regular fa-bookmark"></i>
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+          </div>
+
+          <div class="name-recette">
+            <a href="../pages/recette.html">Muffins au bacon et au cheddar </a>
+          </div>
+          <div class="desc-recette">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis porro sit, culpa nihil
+              nemo vitae illo.</p>
+          </div>
+          <div class="under-desc">
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-clock"></i></div>
+              <div class="text-under">25 min</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-regular fa-thumbs-up"></i></div>
+              <div class="text-under">Facile</div>
+            </div>
+            <div class="under">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="text-under">2 pers</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </main>
+
+  <footer>
+    <div class="footer-container">
+      
+    </div>
+  </footer>
 </body>
 
 </html>
