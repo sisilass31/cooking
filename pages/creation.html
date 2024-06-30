@@ -39,11 +39,9 @@
     </nav>
   </header>
   <main>
-
     <a href="#top">
       <div class="go-top"><i class="fa-solid fa-arrow-up"></i></div>
     </a>
-
 
     <div class="social">
       <i class="fa-brands fa-facebook-f"></i>
@@ -51,87 +49,119 @@
       <i class="fa-brands fa-twitter"></i>
     </div>
 
-    <h1>C'est à votre tour de briller en cuisine ! Partager votre recette unique avec notre communauté.</h1>
-    <h3>Pour que votre recette soit fidèlement reproduite, donnez-nous toutes les informations nécessaires, des
-      ingrédients exacts aux étapes précises de préparation.
-    </h3>
+    <div class="creation-container">
+      <div class="title title-creation">
+        <h1>C'est à votre tour de briller en partageant votre recette unique avec notre communauté.</h1>
+        <p>Pour que votre recette soit fidèlement reproduite, donnez-nous toutes les informations nécessaires, des
+          ingrédients exacts aux étapes précises de préparation.
+        </p>
+      </div>
 
-    <section>
-      <h4>Vos informations:</h4>
-      <form>
-        <label for="votre-nom">Votre prénom</label>
-        <input type="text" name="votre-nom">
+      <div class="creation-recette">
+        <h2>Vos informations:</h2>
+        <div class="form form-informations">
+          <form>
+            <div class="label">
+              <label for="votre-nom">Votre prénom</label>
+              <input type="text" name="votre-nom">
+            </div>
 
-        <label for="votre-prénom">Votre nom</label>
-        <input type="text" name="votre-prénom">
+            <div class="label">
+              <label for="votre-prénom">Votre nom</label>
+              <input type="text" name="votre-prénom">
+            </div>
 
-        <label for="votre-prénom">Votre email</label>
-        <input type="email" name="votre-email">
-      </form>
-      <p>Je désire voir apparaître ces informations sur la recette:</p>
+            <div class="label">
+              <label for="votre-prénom">Votre email</label>
+              <input type="email" name="votre-email">
+            </div>
+          </form>
+        </div>
 
-      <form style="display: flex; align-items: center" ;>
-        <input type="checkbox">
-        <p>Mon nom, prénom ou pseudonyme</p>
-        <br>
-        <input type="checkbox">
-        <p>Mon adresse e-mail</p>
-        <br>
-        <input type="checkbox">
-        <p>L'adresse de mon site Web</p>
-      </form>
-    </section>
+        <p>Je désire voir apparaître ces informations sur la recette:</p>
 
-    <section>
-      <h4>Recette:</h4>
+        <div class="form form-informations">
+          <form style="display: flex; align-items: center" ;>
+            <div class="label2">
+              <p>
+                <input type="checkbox" class="infos" id="infos">
+                <label for="infos">Mon nom, prénom ou pseudonyme</label>
+              </p>
+            </div>
 
-      <form>
-        <label for="titre">Le titre de votre recette</label>
-        <input type="text" name="titre">
+            <div class="label2">
+              <p>
+                <input type="checkbox" class="infos" id="infos">
+                <label for="infos">Mon adresse e-mail</label>
+              </p>
+            </div>
 
-        <br><br>
+            <div class="label2">
+              <p>
+                <input type="checkbox" class="infos" id="infos">
+                <label for="infos">L'adresse de mon site Web</label>
+              </p>
+            </div>
+          </form>
+        </div>
 
-        <label for="description">La description</label>
-        <input type="text" name="description">
+      </div>
 
-        <br><br>
+      <div class="creation-recette-container">
+        <h2>Recette:</h2>
 
-        <label for="image">Rajouter une image:</label>
-        <input type="file" name="image">
+        <div class="form form-recette">
+          <form>
+            <div class="label">
+              <label for="titre">Le titre de votre recette</label>
+              <input type="text" name="titre">
+            </div>
 
-        <br>
-        <br>
+            <div class="label">
+              <label for="description">La description</label>
+              <input type="text" name="description">
+            </div>
 
-        <label for="durée">La durée de préparation:</label>
-        <input type="text" name="durée"> <span>min</span>
-        <br>
-        <br>
-        <label for="cuisson">La durée de cuisson (*) champ facultatif</label>
-        <input type="text" name="cuisson"> <span>min</span>
-        <br>
-        <table>
-          <tr>
-            <td>
-              <label for="ingredients">Ingrédients:</label>
-              <br>
-              <textarea name="ingredients"></textarea>
-            </td>
-            <br>
-            <td>
-              <label for="Préparation">Préparation:</label>
-              <br>
-              <textarea name="Préparation"></textarea>
-            </td>
-          </tr>
-        </table>
-        <br>
-        <label for="astuce">Quelques astuces?</label>
-        <input type="text" name="astuce">
+            <div class="label">
+              <label for="image">Rajouter une image:</label>
+              <input type="file" name="image">
+            </div>
 
-        <br><br>
-        <input type="submit" name="envoyer" value="Mettre ma recette en ligne">
-      </form>
-    </section>
+            <div class="label">
+              <label for="durée">La durée de préparation:</label>
+              <input type="text" name="durée"> <span>min</span>
+            </div>
+
+            <div class="label">
+              <label for="cuisson">La durée de cuisson (*) champ facultatif</label>
+              <input type="text" name="cuisson"> <span>min</span>
+            </div>
+
+            <table>
+              <tr>
+                <td>
+                  <label for="ingredients">Ingrédients:</label>
+
+                  <textarea name="ingredients"></textarea>
+                </td>
+
+                <td>
+                  <label for="Préparation">Préparation:</label>
+
+                  <textarea name="Préparation"></textarea>
+                </td>
+              </tr>
+            </table>
+
+            <label for="astuce">Quelques astuces?</label>
+            <input type="text" name="astuce">
+
+
+            <input type="submit" name="envoyer" value="Mettre ma recette en ligne">
+          </form>
+        </div>
+      </div>
+    </div>
 
   </main>
 
