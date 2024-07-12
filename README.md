@@ -23,4 +23,4 @@ Titres: `Gloock` Paragraphes: `Carrois Gothic`
 
 #### logo
 
-![alt text](image.png)
+![alt text](https://github.com/sisilass31/cooking/blob/main/assets/images/logo.png?raw=true)
