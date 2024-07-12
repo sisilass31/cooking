@@ -16,6 +16,17 @@
   --light-grey: #5e5e5e;
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 10%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 /*general*/
 html {
   scroll-behavior: smooth;
@@ -192,10 +203,10 @@ h2 {
 
 .description p {
   padding-bottom: 15px;
-}
-
-.description p {
   line-height: 26px;
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-fill-mode: both;
 }
 
 /*description acceuil*/
@@ -425,12 +436,34 @@ h2 {
   justify-content: space-between;
 }
 
+.form.form-recette .form-without-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.form.form-recette .table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.form.form-recette .table table {
+  width: 100%;
+}
+
 .title-creation p {
   font-size: 16px;
   margin-top: 15px;
 }
 
 .creation-recette h2 {
+  margin-bottom: 15px;
+}
+
+.creation-recette-container h2 {
   margin-bottom: 15px;
 }
 
@@ -443,8 +476,14 @@ h2 {
   flex-direction: column;
 }
 
+.label label,
+textarea {
+  margin-bottom: 10px;
+}
+
 .label2 {
   display: flex;
+  flex-direction: column;
 }
 
 /*copier coller pour styliser mais a comprendre*/
@@ -464,24 +503,26 @@ input[type="checkbox"].infos:checked + label::before {
 }
 /*copier coller pour styliser mais a comprendre*/
 
-.label2 .label label {
+.label2 label {
   margin-bottom: 10px;
 }
 
-.form .label input {
+.form .label input,
+textarea {
   outline: none;
   border: none;
   background-color: var(--light-green);
   width: 280px;
   padding: 10px 15px;
   border-radius: 10px;
+  resize: none;
 }
 
 .form input::file-selector-button {
   color: var(--white);
-  padding: 8px 12px;
   border-radius: 10px;
   background-color: var(--green);
+  padding: 10px 15px;
   outline: none;
   border: none;
   cursor: pointer;

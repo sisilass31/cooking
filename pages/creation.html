@@ -112,53 +112,55 @@
 
         <div class="form form-recette">
           <form>
-            <div class="label">
-              <label for="titre">Le titre de votre recette</label>
-              <input type="text" name="titre">
-            </div>
 
-            <div class="label">
-              <label for="description">La description</label>
-              <input type="text" name="description">
-            </div>
-
-            <div class="label">
+            <div class="label2">
               <label for="image">Rajouter une image:</label>
               <input type="file" name="image">
             </div>
 
-            <div class="label">
-              <label for="durée">La durée de préparation:</label>
-              <input type="text" name="durée"> <span>min</span>
-            </div>
+            <div class="form-without-img">
+              <div class="label">
+                <label for="titre">Le titre de votre recette</label>
+                <input type="text" name="titre">
+              </div>
 
-            <div class="label">
-              <label for="cuisson">La durée de cuisson (*) champ facultatif</label>
-              <input type="text" name="cuisson"> <span>min</span>
-            </div>
+              <div class="label">
+                <label for="description">La description</label>
+                <input type="text" name="description">
+              </div>
 
+              <div class="label">
+                <label for="durée">La durée de préparation:</label>
+                <input type="text" name="durée">
+              </div>
+            </div>
+          </form>
+
+          <div class="table">
             <table>
               <tr>
                 <td>
-                  <label for="ingredients">Ingrédients:</label>
-
-                  <textarea name="ingredients"></textarea>
+                  <div class="label">
+                    <label for="ingredients">Ingrédients:</label>
+                    <textarea name="ingredients"></textarea>
+                  </div>
                 </td>
-
+  
                 <td>
-                  <label for="Préparation">Préparation:</label>
-
-                  <textarea name="Préparation"></textarea>
+                  <div class="label">
+                    <label for="Préparation">Préparation:</label>
+                    <textarea name="Préparation"></textarea>
+                  </div>
                 </td>
               </tr>
             </table>
+          </div>
 
-            <label for="astuce">Quelques astuces?</label>
-            <input type="text" name="astuce">
+          <label for="astuce">Quelques astuces?</label>
+          <input type="text" name="astuce">
 
 
-            <input type="submit" name="envoyer" value="Mettre ma recette en ligne">
-          </form>
+          <input type="submit" name="envoyer" value="Mettre ma recette en ligne">
         </div>
       </div>
     </div>
