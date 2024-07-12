@@ -23,4 +23,4 @@ Titres: `Gloock` Paragraphes: `Carrois Gothic`
 
 #### logo
 
-![Logo](http://127.0.0.1:5500/assets/images/logo.png)
+![Logo](./assets/images/logo.png)
